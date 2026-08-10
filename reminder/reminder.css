@@ -1,0 +1,287 @@
+
+/* ================================
+   Go Gas - Reminder Page
+================================ */
+
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f5f8ff;
+    color: #1f2937;
+    min-height: 100vh;
+}
+
+
+/* ================================
+   Header
+================================ */
+
+.reminder-header {
+    width: 100%;
+    height: 75px;
+    background: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 7%;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+}
+
+.logo {
+    font-size: 25px;
+    font-weight: 700;
+    color: #1d4ed8;
+}
+
+.back-btn {
+    text-decoration: none;
+    color: #1d4ed8;
+    font-size: 15px;
+    font-weight: 600;
+    padding: 10px 18px;
+    border: 1px solid #1d4ed8;
+    border-radius: 8px;
+    transition: 0.3s ease;
+}
+
+.back-btn:hover {
+    background: #1d4ed8;
+    color: #ffffff;
+}
+
+
+/* ================================
+   Main Container
+================================ */
+
+.reminder-container {
+    width: 90%;
+    max-width: 1000px;
+    margin: 55px auto;
+    text-align: center;
+}
+
+
+/* Reminder Icon */
+
+.reminder-icon {
+    width: 75px;
+    height: 75px;
+    margin: 0 auto 20px;
+    background: #e8efff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 35px;
+}
+
+
+/* Heading */
+
+.reminder-container h1 {
+    font-size: 42px;
+    color: #111827;
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    font-size: 18px;
+    color: #6b7280;
+    margin-bottom: 35px;
+}
+
+
+/* ================================
+   Main Card
+================================ */
+
+.reminder-card {
+    background: #ffffff;
+    border-radius: 20px;
+    padding: 40px;
+    text-align: left;
+    box-shadow: 0 10px 35px rgba(0, 0, 0, 0.08);
+}
+
+.card-content h2 {
+    font-size: 28px;
+    color: #1d4ed8;
+    margin-bottom: 15px;
+}
+
+.card-content > p {
+    color: #5f6b7a;
+    font-size: 16px;
+    line-height: 1.7;
+    margin-bottom: 10px;
+}
+
+
+/* ================================
+   Features
+================================ */
+
+.features {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 18px;
+    margin-top: 30px;
+}
+
+.feature {
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+    background: #f8faff;
+    padding: 20px;
+    border-radius: 14px;
+    border: 1px solid #e5eaf5;
+    transition: 0.3s ease;
+}
+
+.feature:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.07);
+}
+
+.feature > span {
+    font-size: 28px;
+    min-width: 35px;
+}
+
+.feature h3 {
+    font-size: 17px;
+    color: #1f2937;
+    margin-bottom: 7px;
+}
+
+.feature p {
+    color: #6b7280;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+
+/* ================================
+   App Message
+================================ */
+
+.app-message {
+    margin-top: 30px;
+    padding: 22px;
+    background: #eef4ff;
+    border-left: 5px solid #1d4ed8;
+    border-radius: 10px;
+    display: flex;
+    gap: 15px;
+    align-items: flex-start;
+}
+
+.app-message > span {
+    font-size: 28px;
+}
+
+.app-message h3 {
+    color: #1d4ed8;
+    font-size: 18px;
+    margin-bottom: 7px;
+}
+
+.app-message p {
+    color: #5f6b7a;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+
+/* ================================
+   Button
+================================ */
+
+.service-btn {
+    display: inline-block;
+    margin-top: 30px;
+    padding: 13px 25px;
+    background: #1d4ed8;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 8px;
+    font-size: 15px;
+    font-weight: 600;
+    transition: 0.3s ease;
+}
+
+.service-btn:hover {
+    background: #163ea8;
+    transform: translateY(-2px);
+}
+
+
+/* ================================
+   Footer
+================================ */
+
+footer {
+    text-align: center;
+    padding: 25px;
+    margin-top: 20px;
+    color: #6b7280;
+    font-size: 14px;
+}
+
+
+/* ================================
+   Responsive Design
+================================ */
+
+@media (max-width: 700px) {
+
+    .reminder-header {
+        padding: 0 5%;
+    }
+
+    .logo {
+        font-size: 21px;
+    }
+
+    .back-btn {
+        font-size: 13px;
+        padding: 8px 12px;
+    }
+
+    .reminder-container {
+        width: 92%;
+        margin: 40px auto;
+    }
+
+    .reminder-container h1 {
+        font-size: 32px;
+    }
+
+    .subtitle {
+        font-size: 16px;
+    }
+
+    .reminder-card {
+        padding: 25px;
+    }
+
+    .card-content h2 {
+        font-size: 23px;
+    }
+
+    .features {
+        grid-template-columns: 1fr;
+    }
+
+    .feature {
+        padding: 16px;
+    }
+}

@@ -1,0 +1,325 @@
+
+/* ================================
+   Go Gas - Contact Us Page
+================================ */
+
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f5f8ff;
+    color: #1f2937;
+    min-height: 100vh;
+}
+
+
+/* ================================
+   Header
+================================ */
+
+.contact-header {
+    width: 100%;
+    height: 75px;
+    background: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 7%;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+}
+
+.logo {
+    font-size: 25px;
+    font-weight: 700;
+    color: #1d4ed8;
+}
+
+.back-btn {
+    text-decoration: none;
+    color: #1d4ed8;
+    font-size: 15px;
+    font-weight: 600;
+    padding: 10px 18px;
+    border: 1px solid #1d4ed8;
+    border-radius: 8px;
+    transition: 0.3s ease;
+}
+
+.back-btn:hover {
+    background: #1d4ed8;
+    color: #ffffff;
+}
+
+
+/* ================================
+   Main Container
+================================ */
+
+.contact-container {
+    width: 90%;
+    max-width: 1050px;
+    margin: 55px auto;
+}
+
+
+/* ================================
+   Heading
+================================ */
+
+.contact-heading {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.contact-icon {
+    width: 75px;
+    height: 75px;
+    margin: 0 auto 18px;
+    background: #e8efff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 34px;
+}
+
+.contact-heading h1 {
+    font-size: 42px;
+    color: #111827;
+    margin-bottom: 12px;
+}
+
+.contact-heading p {
+    max-width: 650px;
+    margin: auto;
+    color: #6b7280;
+    font-size: 17px;
+    line-height: 1.7;
+}
+
+
+/* ================================
+   Contact Cards
+================================ */
+
+.contact-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 22px;
+}
+
+.contact-card {
+    background: #ffffff;
+    padding: 30px 25px;
+    border-radius: 18px;
+    text-align: center;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.07);
+    border: 1px solid #edf0f6;
+    transition: 0.3s ease;
+}
+
+.contact-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 14px 30px rgba(0, 0, 0, 0.10);
+}
+
+.card-icon {
+    width: 60px;
+    height: 60px;
+    margin: 0 auto 18px;
+    background: #eef4ff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 27px;
+}
+
+.contact-card h2 {
+    font-size: 21px;
+    color: #1d4ed8;
+    margin-bottom: 12px;
+}
+
+.contact-card p {
+    color: #6b7280;
+    font-size: 14px;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.contact-link {
+    display: inline-block;
+    color: #1d4ed8;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.contact-link:hover {
+    text-decoration: underline;
+}
+
+.contact-text {
+    display: block;
+    color: #374151;
+    font-size: 15px;
+    line-height: 1.7;
+    font-weight: 600;
+}
+
+
+/* ================================
+   Support Section
+================================ */
+
+.support-section {
+    margin-top: 35px;
+    background: #eef4ff;
+    border-left: 5px solid #1d4ed8;
+    border-radius: 14px;
+    padding: 25px 30px;
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.support-icon {
+    font-size: 34px;
+    min-width: 45px;
+}
+
+.support-content h2 {
+    color: #1d4ed8;
+    font-size: 23px;
+    margin-bottom: 10px;
+}
+
+.support-content p {
+    color: #5f6b7a;
+    font-size: 15px;
+    line-height: 1.7;
+    margin-bottom: 6px;
+}
+
+
+/* ================================
+   Action Buttons
+================================ */
+
+.contact-action {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 35px;
+}
+
+.call-btn,
+.services-btn {
+    display: inline-block;
+    text-decoration: none;
+    padding: 13px 25px;
+    border-radius: 8px;
+    font-size: 15px;
+    font-weight: 600;
+    transition: 0.3s ease;
+}
+
+.call-btn {
+    background: #1d4ed8;
+    color: #ffffff;
+}
+
+.call-btn:hover {
+    background: #163ea8;
+    transform: translateY(-2px);
+}
+
+.services-btn {
+    background: #ffffff;
+    color: #1d4ed8;
+    border: 1px solid #1d4ed8;
+}
+
+.services-btn:hover {
+    background: #1d4ed8;
+    color: #ffffff;
+}
+
+
+/* ================================
+   Footer
+================================ */
+
+footer {
+    text-align: center;
+    padding: 25px;
+    margin-top: 20px;
+    color: #6b7280;
+    font-size: 14px;
+}
+
+
+/* ================================
+   Responsive Design
+================================ */
+
+@media (max-width: 800px) {
+
+    .contact-cards {
+        grid-template-columns: 1fr;
+    }
+
+    .contact-container {
+        width: 92%;
+        margin: 40px auto;
+    }
+
+    .contact-heading h1 {
+        font-size: 34px;
+    }
+
+    .contact-heading p {
+        font-size: 15px;
+    }
+
+    .contact-header {
+        padding: 0 5%;
+    }
+
+    .logo {
+        font-size: 21px;
+    }
+
+    .back-btn {
+        font-size: 13px;
+        padding: 8px 12px;
+    }
+}
+
+
+@media (max-width: 500px) {
+
+    .contact-action {
+        flex-direction: column;
+    }
+
+    .call-btn,
+    .services-btn {
+        text-align: center;
+        width: 100%;
+    }
+
+    .support-section {
+        padding: 20px;
+    }
+
+    .contact-heading h1 {
+        font-size: 30px;
+    }
+}

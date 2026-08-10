@@ -1,0 +1,600 @@
+/* =========================================
+   GO GAS - SECURE PAYMENT PAGE
+========================================= */
+
+
+/* =========================
+   BASIC RESET
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f4f8fb;
+    color: #173b6c;
+}
+
+
+/* =========================
+   MAIN PAGE
+========================= */
+
+.payment-page {
+    min-height: 100vh;
+
+    max-width: 1100px;
+
+    margin: auto;
+
+    padding: 35px 20px 60px;
+}
+
+
+/* =========================
+   BACK BUTTON
+========================= */
+
+.back-btn {
+    display: inline-flex;
+
+    align-items: center;
+
+    gap: 8px;
+
+    text-decoration: none;
+
+    color: #173b6c;
+
+    font-size: 15px;
+
+    font-weight: 600;
+
+    margin-bottom: 30px;
+
+    transition: 0.3s ease;
+}
+
+.back-btn:hover {
+    color: #f57c00;
+
+    transform: translateX(-4px);
+}
+
+
+/* =========================
+   MAIN PAYMENT CARD
+========================= */
+
+.payment-hero {
+    width: 100%;
+
+    max-width: 760px;
+
+    margin: 0 auto;
+
+    padding: 55px 35px;
+
+    text-align: center;
+
+    background: #ffffff;
+
+    border-radius: 25px;
+
+    border: 1px solid #edf2f6;
+
+    box-shadow: 0 15px 45px rgba(23, 59, 108, 0.10);
+}
+
+
+/* =========================
+   PAYMENT ICON
+========================= */
+
+.payment-icon {
+    width: 78px;
+    height: 78px;
+
+    margin: 0 auto 22px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background: #eaf7ef;
+
+    color: #20a35a;
+
+    font-size: 31px;
+}
+
+
+/* =========================
+   HERO HEADING
+========================= */
+
+.payment-hero h1 {
+    color: #173b6c;
+
+    font-size: 34px;
+
+    font-weight: 700;
+
+    margin-bottom: 14px;
+}
+
+
+/* =========================
+   HERO TEXT
+========================= */
+
+.payment-hero > p {
+    color: #64748b;
+
+    font-size: 17px;
+
+    line-height: 1.6;
+
+    margin-bottom: 8px;
+}
+
+.payment-hero .small-text {
+    max-width: 580px;
+
+    margin: 0 auto 30px;
+
+    color: #8996a8;
+
+    font-size: 14px;
+
+    line-height: 1.6;
+}
+
+
+/* =========================
+   PAYMENT NOTICE
+========================= */
+
+.payment-notice {
+    max-width: 600px;
+
+    margin: 0 auto;
+
+    padding: 20px;
+
+    display: flex;
+
+    align-items: flex-start;
+
+    gap: 15px;
+
+    text-align: left;
+
+    background: #fff7ed;
+
+    border: 1px solid #fed7aa;
+
+    border-radius: 14px;
+}
+
+
+/* Notice Icon */
+
+.payment-notice > i {
+    color: #f57c00;
+
+    font-size: 21px;
+
+    margin-top: 2px;
+}
+
+
+/* Notice Heading */
+
+.payment-notice h3 {
+    color: #173b6c;
+
+    font-size: 16px;
+
+    margin-bottom: 7px;
+}
+
+
+/* Notice Paragraph */
+
+.payment-notice p {
+    color: #6d7b8c;
+
+    font-size: 14px;
+
+    line-height: 1.6;
+}
+
+
+/* =========================
+   PAYMENT OPTIONS SECTION
+========================= */
+
+.payment-options {
+    margin-top: 35px;
+
+    padding: 35px;
+
+    background: #ffffff;
+
+    border-radius: 20px;
+
+    border: 1px solid #edf2f6;
+
+    box-shadow: 0 12px 35px rgba(23, 59, 108, 0.08);
+}
+
+
+/* Heading */
+
+.payment-options h2 {
+    text-align: center;
+
+    color: #173b6c;
+
+    font-size: 25px;
+
+    margin-bottom: 8px;
+}
+
+
+/* Section Text */
+
+.section-text {
+    text-align: center;
+
+    color: #8996a8;
+
+    font-size: 14px;
+
+    margin-bottom: 28px;
+}
+
+
+/* =========================
+   PAYMENT GRID
+========================= */
+
+.payment-grid {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 20px;
+}
+
+
+/* =========================
+   PAYMENT CARD
+========================= */
+
+.payment-card {
+    padding: 28px 20px;
+
+    text-align: center;
+
+    background: #f8fafc;
+
+    border: 1px solid #edf2f6;
+
+    border-radius: 16px;
+
+    transition: all 0.3s ease;
+}
+
+.payment-card:hover {
+    transform: translateY(-5px);
+
+    box-shadow: 0 10px 25px rgba(23, 59, 108, 0.10);
+}
+
+
+/* =========================
+   OPTION ICON
+========================= */
+
+.option-icon {
+    width: 58px;
+    height: 58px;
+
+    margin: 0 auto 16px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border-radius: 14px;
+
+    background: #fff1e3;
+
+    color: #f57c00;
+
+    font-size: 22px;
+}
+
+
+/* =========================
+   CARD HEADING
+========================= */
+
+.payment-card h3 {
+    color: #173b6c;
+
+    font-size: 17px;
+
+    margin-bottom: 9px;
+}
+
+
+/* =========================
+   CARD TEXT
+========================= */
+
+.payment-card p {
+    color: #7b8797;
+
+    font-size: 13px;
+
+    line-height: 1.6;
+}
+
+
+/* =========================
+   CONTACT SECTION
+========================= */
+
+.contact-payment {
+    margin-top: 35px;
+
+    padding: 28px 30px;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 20px;
+
+    background: #173b6c;
+
+    color: #ffffff;
+
+    border-radius: 20px;
+
+    box-shadow: 0 12px 35px rgba(23, 59, 108, 0.18);
+}
+
+
+/* =========================
+   CONTACT ICON
+========================= */
+
+.contact-icon {
+    width: 55px;
+    height: 55px;
+
+    flex-shrink: 0;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border-radius: 14px;
+
+    background: rgba(255, 255, 255, 0.12);
+
+    font-size: 22px;
+}
+
+
+/* =========================
+   CONTACT CONTENT
+========================= */
+
+.contact-content {
+    flex: 1;
+}
+
+.contact-content h2 {
+    font-size: 19px;
+
+    margin-bottom: 6px;
+}
+
+.contact-content p {
+    color: #d6dfeb;
+
+    font-size: 14px;
+
+    line-height: 1.5;
+}
+
+
+/* =========================
+   CONTACT BUTTON
+========================= */
+
+.contact-btn {
+    display: inline-flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 8px;
+
+    padding: 13px 20px;
+
+    background: #f57c00;
+
+    color: #ffffff;
+
+    text-decoration: none;
+
+    border-radius: 9px;
+
+    font-size: 14px;
+
+    font-weight: 600;
+
+    white-space: nowrap;
+
+    transition: all 0.3s ease;
+}
+
+.contact-btn:hover {
+    background: #df6f00;
+
+    transform: translateY(-2px);
+}
+
+
+/* =========================
+   TABLET RESPONSIVE
+========================= */
+
+@media (max-width: 800px) {
+
+    .payment-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .contact-payment {
+        flex-wrap: wrap;
+    }
+
+    .contact-content {
+        flex: 1 1 70%;
+    }
+
+    .contact-btn {
+        margin-left: 75px;
+    }
+}
+
+
+/* =========================
+   MOBILE RESPONSIVE
+========================= */
+
+@media (max-width: 600px) {
+
+    .payment-page {
+        padding: 25px 15px 45px;
+    }
+
+
+    /* Hero */
+
+    .payment-hero {
+        padding: 40px 22px;
+    }
+
+    .payment-icon {
+        width: 68px;
+        height: 68px;
+
+        font-size: 27px;
+    }
+
+    .payment-hero h1 {
+        font-size: 27px;
+    }
+
+    .payment-hero > p {
+        font-size: 15px;
+    }
+
+
+    /* Notice */
+
+    .payment-notice {
+        padding: 17px;
+
+        gap: 12px;
+    }
+
+    .payment-notice h3 {
+        font-size: 15px;
+    }
+
+    .payment-notice p {
+        font-size: 13px;
+    }
+
+
+    /* Options */
+
+    .payment-options {
+        padding: 28px 18px;
+    }
+
+    .payment-options h2 {
+        font-size: 22px;
+    }
+
+    .payment-grid {
+        grid-template-columns: 1fr;
+    }
+
+
+    /* Contact */
+
+    .contact-payment {
+        flex-direction: column;
+
+        text-align: center;
+
+        padding: 28px 20px;
+    }
+
+    .contact-content {
+        flex: none;
+    }
+
+    .contact-btn {
+        width: 100%;
+
+        margin-left: 0;
+    }
+}
+
+
+/* =========================
+   SMALL MOBILE
+========================= */
+
+@media (max-width: 400px) {
+
+    .payment-hero {
+        padding: 35px 18px;
+    }
+
+    .payment-hero h1 {
+        font-size: 24px;
+    }
+
+    .payment-options h2 {
+        font-size: 21px;
+    }
+
+    .payment-card {
+        padding: 24px 18px;
+    }
+}
