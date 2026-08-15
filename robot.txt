@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://sai-baba-go-gas-agency.vercel.app/sitemap.xml
